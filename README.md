@@ -1,65 +1,60 @@
-# 🎬 Cinemax — Movie App UI
+# Welcome to your Expo app 👋
 
-Welcome to the **Cinemax Movie App** – a sleek, modern movie browsing experience built with **React Native** and inspired by this [Figma UI Kit](https://www.figma.com/design/6LmnGQ1dWlyUKp94GMZrCw/Cinemax---Movie-Apps-UI-Kit--Community-?node-id=5-2&p=f&t=UwfDitNlONVKD0e1-0).
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
----
+## Get started
 
-## 📱 Features
+1. Install dependencies
 
-- 🎞️ Browse trending movies  
-- 🔍 Search by title, genre, rating  
-- ❤️ Save to favorites  
-- 📱 Optimized for mobile experience  
+   ```bash
+   npm install
+   ```
 
----
+2. Start the app
 
-## 🧩 Tech Stack
+   ```bash
+   npx expo start
+   ```
 
-- **Framework**: React Native v0.75.4  
-- **Navigation**: React Navigation  
-- **UI Kit**: [Cinemax Figma UI](https://www.figma.com/design/6LmnGQ1dWlyUKp94GMZrCw/Cinemax---Movie-Apps-UI-Kit--Community-?node-id=5-2&p=f&t=UwfDitNlONVKD0e1-0)  
-- **API**: TMDB API  
-- **State Management**: Redux Toolkit  
-- **Networking**: Axios  
+In the output, you'll find options to open the app in a
 
----
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-## 🚀 Getting Started
+You can start developing by editing the screens inside the **src/screens** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-1. **Clone the repository**
+## Project structure
 
-```bash
-git clone https://github.com/Varuzh21/CinemaClone.git
-cd CinemaClone
+The app targets iOS and Android only and follows [Feature-Sliced Design](https://feature-sliced.design). Imports go downwards only.
+
+```
+src/
+├── app/          # Expo Router routes and layouts only
+├── screens/      # full screens, re-exported by route files
+├── widgets/      # composite UI blocks
+├── features/     # user scenarios
+├── entities/     # business domain entities
+└── shared/       # assets, lib, styles, ui
 ```
 
-2. **Install dependencies**
+### Other setup steps
 
-```bash
-npm install
-# or
-yarn
-```
+- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
+- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
+- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
 
-3. **Run the app**
+## Learn more
 
-```bash
-# For Android
-npx react-native run-android
+To learn more about developing your project with Expo, look at the following resources:
 
-# For iOS
-npx react-native run-ios
-```
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
----
+## Join the community
 
-## 🖼️ UI Reference
+Join our community of developers creating universal apps.
 
-This app is based on the following design:  
-🔗 [Figma UI Kit — Cinemax](https://www.figma.com/design/6LmnGQ1dWlyUKp94GMZrCw/Cinemax---Movie-Apps-UI-Kit--Community-?node-id=5-2&p=f&t=UwfDitNlONVKD0e1-0)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
