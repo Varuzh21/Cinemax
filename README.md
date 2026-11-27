@@ -10,7 +10,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Copy `.env.example` to `.env.local` and add your TMDB API Read Access Token. It is bundled into the app, so never use a secret with write access here.
+
+3. Start the app
 
    ```bash
    npx expo start

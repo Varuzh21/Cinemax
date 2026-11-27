@@ -35,7 +35,40 @@
           "imageWidth": 76
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-font",
+        {
+          "ios": {
+            "fonts": [
+              "./src/shared/assets/font/Regular.ttf",
+              "./src/shared/assets/font/Medium.ttf",
+              "./src/shared/assets/font/SemiBold.ttf"
+            ]
+          },
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Montserrat",
+                "fontDefinitions": [
+                  {
+                    "path": "./src/shared/assets/font/Regular.ttf",
+                    "weight": 400
+                  },
+                  {
+                    "path": "./src/shared/assets/font/Medium.ttf",
+                    "weight": 500
+                  },
+                  {
+                    "path": "./src/shared/assets/font/SemiBold.ttf",
+                    "weight": 600
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
