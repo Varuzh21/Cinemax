@@ -35,7 +35,13 @@
       "preset": "recommended",
       "correctness": {
         "noUnusedImports": "error",
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
+        "noReactNativeRawText": {
+          "level": "error",
+          "options": {
+            "skip": ["Card.Title", "Card.Description"]
+          }
+        }
       },
       "style": {
         "noDefaultExport": "error",

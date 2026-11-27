@@ -2,9 +2,11 @@ import type { FontFamilyDefinition } from 'expo-font';
 
 import { FontWeights } from './theme';
 
+export const FONT_FAMILY = 'Montserrat';
+
 export const FONT_SOURCES = [
 	{
-		fontFamily: 'Montserrat',
+		fontFamily: FONT_FAMILY,
 		fontDefinitions: [
 			{
 				path: require('@/shared/assets/font/Regular.ttf'),

@@ -1,1 +1,1 @@
-export { OnboardingScreen as default } from '@/screens/onboarding';
+export { StreamingScreen as default } from '@/screens/onboarding';

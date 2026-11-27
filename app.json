@@ -1,77 +1,74 @@
 {
-  "expo": {
-    "name": "Cinemax",
-    "slug": "Cinemax",
-    "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "orientation": "portrait",
-    "icon": "./src/shared/assets/images/icon.png",
-    "scheme": "cinemax",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": "./src/shared/assets/expo.icon",
-      "bundleIdentifier": "com.varuzhan23.Cinemax"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./src/shared/assets/images/android-icon-foreground.png",
-        "backgroundImage": "./src/shared/assets/images/android-icon-background.png",
-        "monochromeImage": "./src/shared/assets/images/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false,
-      "package": "com.varuzhan23.Cinemax"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#208AEF",
-          "image": "./src/shared/assets/images/splash-icon.png",
-          "imageWidth": 76
-        }
-      ],
-      "expo-secure-store",
-      [
-        "expo-font",
-        {
-          "ios": {
-            "fonts": [
-              "./src/shared/assets/font/Regular.ttf",
-              "./src/shared/assets/font/Medium.ttf",
-              "./src/shared/assets/font/SemiBold.ttf"
-            ]
-          },
-          "android": {
-            "fonts": [
-              {
-                "fontFamily": "Montserrat",
-                "fontDefinitions": [
-                  {
-                    "path": "./src/shared/assets/font/Regular.ttf",
-                    "weight": 400
-                  },
-                  {
-                    "path": "./src/shared/assets/font/Medium.ttf",
-                    "weight": 500
-                  },
-                  {
-                    "path": "./src/shared/assets/font/SemiBold.ttf",
-                    "weight": 600
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
-  }
+	"expo": {
+		"name": "Cinemax",
+		"slug": "Cinemax",
+		"version": "1.0.0",
+		"platforms": ["ios", "android"],
+		"orientation": "portrait",
+		"icon": "./src/shared/assets/images/app/icon.png",
+		"scheme": "cinemax",
+		"userInterfaceStyle": "automatic",
+		"ios": {
+			"icon": "./src/shared/assets/expo.icon",
+			"bundleIdentifier": "com.varuzhan23.Cinemax"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"backgroundColor": "#E6F4FE",
+				"foregroundImage": "./src/shared/assets/images/app/android-icon-foreground.png",
+				"backgroundImage": "./src/shared/assets/images/app/android-icon-background.png",
+				"monochromeImage": "./src/shared/assets/images/app/android-icon-monochrome.png"
+			},
+			"predictiveBackGestureEnabled": false,
+			"package": "com.varuzhan23.Cinemax"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"backgroundColor": "#208AEF",
+					"image": "./src/shared/assets/images/app/splash-icon.png",
+					"imageWidth": 76
+				}
+			],
+			"expo-secure-store",
+			[
+				"expo-font",
+				{
+					"ios": {
+						"fonts": [
+							"./src/shared/assets/font/Regular.ttf",
+							"./src/shared/assets/font/Medium.ttf",
+							"./src/shared/assets/font/SemiBold.ttf"
+						]
+					},
+					"android": {
+						"fonts": [
+							{
+								"fontFamily": "Montserrat",
+								"fontDefinitions": [
+									{
+										"path": "./src/shared/assets/font/Regular.ttf",
+										"weight": 400
+									},
+									{
+										"path": "./src/shared/assets/font/Medium.ttf",
+										"weight": 500
+									},
+									{
+										"path": "./src/shared/assets/font/SemiBold.ttf",
+										"weight": 600
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		}
+	}
 }

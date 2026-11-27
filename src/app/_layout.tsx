@@ -1,13 +1,16 @@
 import { QueryClientProvider } from '@tanstack/react-query';
+
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
+
 import { SessionProvider, useSession } from '@/entities/session';
+
 import { useIsOnboarded } from '@/features/onboarding';
+
 import { queryClient } from '@/shared/api';
 import { FONT_SOURCES } from '@/shared/config/fonts';
-
-SplashScreen.preventAutoHideAsync();
+import { STACK_SCREEN_OPTIONS } from '@/shared/config/navigation';
 
 export default function RootLayout() {
 	const [isFontsLoaded, fontError] = useFonts(FONT_SOURCES);
@@ -37,7 +40,7 @@ function RootNavigator() {
 	const shouldShowAuth = !isSignedIn && isOnboarded;
 
 	return (
-		<Stack screenOptions={{ headerShown: false }}>
+		<Stack screenOptions={STACK_SCREEN_OPTIONS}>
 			<Stack.Protected guard={shouldShowOnboarding}>
 				<Stack.Screen name='(onboarding)' />
 			</Stack.Protected>
