@@ -1,8 +1,17 @@
-import type { PropsWithChildren } from 'react';
+import type { ReactNode } from 'react';
+import type { ViewProps } from 'react-native';
 import { StyleSheet, View } from 'react-native';
 
-export function Wrapper({ children }: PropsWithChildren) {
-	return <View style={styles.container}>{children}</View>;
+interface WrapperProps extends ViewProps {
+	children: ReactNode;
+}
+
+export function Wrapper({ children, style, ...props }: WrapperProps) {
+	return (
+		<View style={[style, styles.container]} {...props}>
+			{children}
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({

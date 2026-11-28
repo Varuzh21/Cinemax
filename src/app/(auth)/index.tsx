@@ -1,1 +1,1 @@
-export { SignInScreen as default } from '@/screens/sign-in';
+export { Welcome as default } from '@/screens/welcome';

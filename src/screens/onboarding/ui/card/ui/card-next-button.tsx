@@ -1,7 +1,8 @@
 import { Pressable, StyleSheet, View } from 'react-native';
-import Svg, { Path, Polyline } from 'react-native-svg';
+import Svg, { Path } from 'react-native-svg';
 
 import { Colors } from '@/shared/config/theme';
+import { ChevronRight } from '@/shared/icon';
 
 import { buildRoundedSquarePath } from '../lib/build-rounded-square-path';
 
@@ -61,16 +62,7 @@ export function CardNextButton({
 				onPress={onPress}
 				style={({ pressed }) => [styles.button, pressed && styles.pressed]}
 			>
-				<Svg width={24} height={24} viewBox='0 0 24 24'>
-					<Polyline
-						points='9 6 15 12 9 18'
-						stroke={Colors.primary.dark}
-						strokeWidth={2}
-						strokeLinecap='round'
-						strokeLinejoin='round'
-						fill='none'
-					/>
-				</Svg>
+				<ChevronRight color={Colors.primary.dark} />
 			</Pressable>
 		</View>
 	);

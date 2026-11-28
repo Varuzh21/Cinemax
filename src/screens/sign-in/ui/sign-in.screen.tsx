@@ -1,10 +1,10 @@
 import { Text } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { ThemedView } from '@/shared/ui/themed-view';
 
 export function SignInScreen() {
 	return (
-		<SafeAreaView>
+		<ThemedView>
 			<Text>SignInScreen</Text>
-		</SafeAreaView>
+		</ThemedView>
 	);
 }
